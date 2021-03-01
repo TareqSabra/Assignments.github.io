@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title> Assigemnt 5 </title>
+    <script>
+        $(document).ready(function () {
+            $("#Button").hover(
+                function () {
+                    $(this).removeClass("buttonNH");
+                    $(this).addClass("buttonH");
+                }, function () {
+                    $(this).removeClass("buttonH");
+                    $(this).addClass("buttonNH");
+                }
+            );
+        });
+    </script>
+    <style>
+        #Card {
+            position: absolute;
+            margin: 50px;
+            width: 300px;
+            height: 420px;
+            border-width: thin;
+            border-radius: 7px;
+            border-color: #cbebe2;
+            border-style: solid;
+        }
+
+        #Header {
+            display: flex;
+            justify-content: center;
+        }
+
+        #adress {
+            margin: 15px;
+            font-size: 15px;
+            color: gray;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #TickIcon {
+            position: absolute;
+            right: 10px;
+            top: 19px;
+            color: #6ab6f0
+        }
+
+        #Avatar {
+            display: flex;
+            justify-content: center;
+        }
+
+        #av {
+            position: absolute;
+            top: 50px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        #MainText_Con {
+            display: flex;
+            justify-content: center;
+        }
+
+        #Name {
+            font-size: 20px;
+            position: absolute;
+            top: 205px;
+            color: gray;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #Discription {
+            position: absolute;
+            font-size: 13px;
+            color: gray;
+            top: 240px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #Button {
+            position: absolute;
+            left: 34%;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            top: 289px;
+            width: 100px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px grey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .buttonNH {
+            background-color: #67b5ff;
+        }
+
+        .buttonH {
+            background-color: #2876be;
+
+        }
+
+        #Footer {
+            width: 100%;
+            height: 14%;
+            position: absolute;
+            bottom: 0px;
+            background-color: #233951;
+            border-radius: 5px;
+        }
+
+        #Posts {
+            position: absolute;
+            color: #866b78;
+            left: 16px;
+            top: 13px;
+        }
+
+        #fav {
+            position: absolute;
+            color: #866b78;
+            left: 90px;
+            top: 13px;
+        }
+
+        #msg {
+            position: absolute;
+            color: #866b78;
+            left: 200px;
+            top: 13px;
+        }
+
+        #Posts_Contetnt {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .icons {
+            font-size: 22px;
+        }
+
+        .footer_titel {
+            margin-left: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .footer_Text {
+            color: white;
+            font-size: 12px;
+            font-family: inherit;
+            position: absolute;
+            left: 52%;
+            top: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Con">
+        <div id="Card">
+            <div id="Header">
+                <span id="TickIcon">
+                    <span class="far fa-check-circle"></span>
+                </span>
+                <span id="adress">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span>
+                        Palestine,Qabatiya
+                    </span>
+                </span>
+            </div>
+            <div id="Avatar">
+                <img id="av" src="https://i.ibb.co/Jyb2pBB/133962676-4738937959514397-418502965101281305-o.jpg"
+                    alt="avatar">
+            </div>
+            <div id="MainText_Con">
+
+                <span id="Name">
+                    Saif Zakarnih
+                </span>
+                <span id="Discription">
+                    Red Stone engineer
+                </span>
+                <a href="#"><span class="buttonNH" id="Button">Follow</span></a>
+            </div>
+            <div id="Footer">
+                <div id="Posts">
+                    <span id="Posts_Contetnt">
+                        <span class="far fa-image icons"></span>
+                        <span class="footer_titel">
+                            Posts
+                        </span>
+                    </span>
+                    <span class="footer_Text">
+                        1,230
+                    </span>
+                </div>
+                <div id="fav">
+                    <span id="Posts_Contetnt">
+                        <span class="far fa-heart icons"></span>
+                        <span class="footer_titel">
+                            Favourites
+                        </span>
+                    </span>
+                    <span class="footer_Text">
+                        7,110
+                    </span>
+                </div>
+                <div id="msg">
+                    <span id="Posts_Contetnt">
+                        <span class="far fa-paper-plane icons"></span>
+                        <span class="footer_titel">
+                            Messages
+                        </span>
+                    </span>
+                    <span class="footer_Text">
+                        4,250
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
