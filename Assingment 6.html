@@ -5,16 +5,41 @@
     <title>Assignment 6</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script>
+    </script>
     <style>
+        .aboutme {
+            width: 100%;
+            height: 1000px;
+            background-color: black;
+            z-index: 0;
+        }
+        
         .Containor {
             display: flex;
-            align-items: center;
             justify-content: center;
+            z-index: 1;
+        }
+        
+        .buttomColorCon {
+            width: 100%;
+            height: 100%;
+            background-color: #f2fafb;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            margin-top: 2420px
+        }
+        
+        .buttom_Con {
+            width: 100%;
+            z-index: 1;
         }
         
         .Page_Contentent {
             width: 60%;
-            height: 100%;
+            height: auto;
+            z-index: 2;
         }
         
         .logo img {
@@ -28,10 +53,10 @@
             background-image: url("https://i.ibb.co/dgVtWGp/9.png");
             width: 50%;
             height: 25%;
-            z-index: 1;
             position: absolute;
             left: 25%;
             top: 0;
+            z-index: 1;
         }
         
         .slider {
@@ -64,16 +89,16 @@
         .main_Content {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             margin-top: 20%;
             position: absolute;
-            width: 59%;
-            height: 50%;
+            width: 2170px;
+            height: 2170px;
+            flex-wrap: wrap;
         }
         
         .sqaure {
-            height: 100%;
-            width: 50%;
+            height: 1085px;
+            width: 1085px;
         }
         
         .sqaure_Bluish {
@@ -91,11 +116,147 @@
         .sqaure_pink {
             background-color: #e8bdf5;
         }
+        
+        .Loading_Text_area {
+            justify-content: center;
+            justify-items: center;
+            position: absolute;
+            width: auto;
+            left: 42%;
+            margin-top: 85%;
+        }
+        
+        .Loading_Text {
+            font-size: 25px;
+            font-family: 'Montserrat';
+            letter-spacing: 70px;
+            font-weight: 100;
+        }
+        
+        .Loading_Image img {
+            position: absolute;
+            margin-top: 150px;
+            max-height: 1000px;
+            max-width: 1000px;
+            left: 250px;
+        }
+        
+        .Number {
+            position: absolute;
+            width: auto;
+            left: 43%;
+            margin-top: 100%;
+            font-size: 70px;
+            font-family: 'Montserrat';
+        }
+        
+        .credits {
+            position: absolute;
+            width: auto;
+            left: 39%;
+            color: rgb(112, 108, 108);
+            margin-top: 103%;
+            font-size: 30px;
+            font-family: 'Montserrat';
+        }
+        
+        .Footer {
+            position: absolute;
+            margin-top: 107%;
+            display: flex;
+            flex-direction: row;
+            left: 35%;
+        }
+        
+        .Footer_Text {
+            font-size: 35px;
+            margin-left: 100px;
+            letter-spacing: 10px;
+            font-family: 'Montserrat';
+        }
+        
+        .buttom {
+            width: 2px;
+            left: 49.5%;
+            margin-top: 110%;
+            height: 150px;
+            position: absolute;
+            background-color: black;
+        }
+        
+        .thunder_icon img {
+            position: absolute;
+            max-width: 300px;
+            max-height: 200px;
+            left: 65%;
+            top: 30%;
+            width: 5rem;
+            height: 5rem;
+        }
+        
+        .wave_icon img {
+            position: absolute;
+            max-width: 300px;
+            max-height: 200px;
+            left: 76%;
+            top: 50%;
+            width: 7rem;
+            height: 7rem;
+            z-index: 1;
+        }
+        
+        .Arrow_icon img {
+            position: absolute;
+            max-width: 300px;
+            max-height: 200px;
+            left: 10%;
+            top: 100%;
+            width: 6rem;
+            height: 6rem;
+            z-index: 1;
+        }
+        
+        .step_icon img {
+            position: absolute;
+            max-width: 300px;
+            max-height: 200px;
+            left: 2900px;
+            margin-top: 2200px;
+            width: 7rem;
+            height: 7rem;
+            z-index: 1;
+        }
+        
+        .sqr {
+            border-style: solid;
+            border-width: 0.5px;
+            width: 200px;
+            height: 70px;
+            margin-left: 800px;
+            margin-top: 900px;
+        }
+        
+        .line {
+            position: absolute;
+            width: 200px;
+            height: 2px;
+            background-color: black;
+            margin-top: 37px;
+            left: 700px;
+        }
+        
+        .sqaure_whitesh span {
+            white-space: nowrap;
+            font-size: 30px;
+            font-family: 'Montserrat';
+            margin-left: 72px;
+            font-weight: 50;
+        }
     </style>
 </head>
 
 <body>
-    <div id="about_Me">
+    <div id="about_Me" class="aboutme">
     </div>
     <div class="Containor">
         <div class="Page_Contentent">
@@ -104,6 +265,7 @@
             </span>
             <div class="background">
             </div>
+
             <div class="slider">
                 <div class="slider-button">
                 </div>
@@ -121,20 +283,67 @@
                     This is an assigment done by tareq sabra for asal training
                 </div>
             </div>
-            <div class="main_Content">
-
-                <div class="sqaure sqaure_Pinkish">
-                </div>
-                <div class="sqaure sqaure_whitesh">
-                </div>
-                <div class="sqaure sqaure_pink">
-                </div>
-                <div class="sqaure sqaure_Bluish">
-                </div>
-
+            <div class="thunder_icon">
+                <img src="https://i.ibb.co/C8KRWr3/3.png" alt="3">
             </div>
+            <div class="wave_icon">
+                <img src="https://i.ibb.co/djQTT3m/4.png" alt="4">
+            </div>
+            <div class="Arrow_icon">
+                <img src="https://i.ibb.co/FWZyW6G/6.png" alt="6">
+            </div>
+            <div class="step_icon">
+                <img src="https://i.ibb.co/gJMYH7L/5.png" alt="5">
+            </div>
+            <div class="buttom_Con">
+                <div class="main_Content">
+                    <div class="sqaure sqaure_Bluish">
+                    </div>
+                    <div class="sqaure sqaure_Pinkish">
+                    </div>
+                    <div class="sqaure sqaure_whitesh ">
+                        <div class="sqr">
+                            <div class="line"></div>
+                            <span>
+                                    Read more
+                                </span>
+                        </div>
 
+                    </div>
+                    <div class="sqaure sqaure_pink">
+                    </div>
+                </div>
+                <div class="buttomColorCon">
+                </div>
+                <div class="Loading_Text_area">
+                    <span class="Loading_Text">
+                    LOADING
+                </span>
+                    <div class="Loading_Image">
+                        <img src="https://i.ibb.co/VxPPCCx/8.png" alt="8" border="0">
+                    </div>
+                </div>
+                <div class="Number">
+                    1.800.320.420
+                </div>
+                <div class="credits">
+                    This Page was made by Tareq Sabra for Asal traning
+                </div>
+                <div class="Footer">
+                    <span class="Footer_Text">
+                    FaceBook
+                </span>
+                    <span class="Footer_Text">
+                    twitter
+                </span>
+                    <span class="Footer_Text">
+                    dribbble
+                </span>
 
+                </div>
+                <div class="buttom">
+                </div>
+            </div>
         </div>
     </div>
 </body>
