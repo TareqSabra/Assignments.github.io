@@ -5,37 +5,112 @@
     <title>Assignment 6</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
     <script>
+        $(document).ready(function() {
+            $("#slider").click(function() {
+                $("#about_Me").removeClass("Hide");
+            });
+            $("#exit_Icon").click(function() {
+                $("#about_Me").addClass("Hide");
+            });
+            $("#exit_Icon").hover(
+                function() {
+                    $(this).removeClass("mouse_out");
+                    $(this).addClass("mouse_on");
+                },
+                function() {
+                    $(this).removeClass("mouse_on");
+                    $(this).addClass("mouse_out");
+                }
+            );
+
+        });
     </script>
 </head>
 
 <body>
-    <div id="about_Me" class="aboutme">
+    <div id="about_Me" class="aboutme Hide">
+        <div class="AboutMe_ThunderICon">
+            <img src="https://i.ibb.co/C8KRWr3/3.png" alt="3">
+        </div>
+        <div class="AboutMe_WaveICon">
+            <img src="https://i.ibb.co/djQTT3m/4.png" alt="4">
+        </div>
+        <div class="AboutMe_ArrowICon">
+            <img src="https://i.ibb.co/FWZyW6G/6.png" alt="6">
+        </div>
+        <div class="exit_Icon mouse_out">
+            <i id="exit_Icon" class="fas fa-times"></i>
+        </div>
         <div class="backgroundMe">
         </div>
-        <div class="download">
+        <div class="download_Con" title="Downloade CV">
+            <div class="download_icon">
+                <span class="fas fa-arrow-down"></span>
+            </div>
         </div>
         <div class="av">
             <img src="https://i.ibb.co/Y3JCPPG/88136086-600549490497381-8081822025099771904-o.jpg">
+        </div>
+        <div class="AboutMe_MainText">
+            Hello, i'm
+            <span>
+                Tareq Sabra.
+            </span>
+        </div>
+        <div class="AboutMe_midText">
+            This page was made for asal intrenship by tareq sabra.
+        </div>
+        <div class="AboutMe_SupText">
+            For more information and future collaboration <a target="_blank" href="https://www.facebook.com/TareqSenpai/">Contact Me</a>
+        </div>
+
+        <div class="AboutMe_skills">
+            <div class="skill">
+                <label for="Progress">Photoshop</label>
+                <progress id="Progress" value="80" max="100"></progress>
+            </div>
+            <div class="skill">
+                <label for="Progress">HTML, CSS & js</label>
+                <progress id="Progress" value="85" max="100"></progress>
+            </div>
+            <div class="skill">
+                <label for="Progress">React</label>
+                <progress id="Progress" value="77" max="100"></progress>
+            </div>
+        </div>
+        <div class="AboutMe_WorkExpC">
+            <div class="AboutMe_WorkExpC_WorkExp">
+                2016-2021
+                <br>
+                <span>computer engineering student | <i>An-Najah universty</i> </span>
+            </div>
+            <div class="AboutMe_WorkExpC_WorkExp">
+                2021-now
+                <br>
+                <span>Front end intern | <i>ASAL Technologies</i></span>
+            </div>
+            <div class="AboutMe_WorkExpC_WorkExp">
+                2018-now
+                <br>
+                <span>graphic designer | <i>An-Najah Japanese culture</i> </span>
+            </div>
         </div>
 
     </div>
     <div class="Containor">
         <div class="Page_Contentent">
-            <span class="logo">
-                <img src="https://i.ibb.co/YttbQsC/logo.png" alt="logo">
+            <span class="logo"></span>
+            <img src="https://i.ibb.co/YttbQsC/logo.png" alt="logo">
             </span>
             <div class="background">
             </div>
 
-            <div class="slider">
-                <div class="slider-button">
-                </div>
-                <div class="slider-button">
-                </div>
-                <div class="slider-button">
-                </div>
+            <div id="slider" class="slider">
+                <i class="fas fa-bars"></i>
             </div>
             <div class="Text">
                 <div class="main_text">
