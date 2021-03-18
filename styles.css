@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+}
+
+.aboutme {
+    width: 100%;
+    height: 1700px;
+    background-color: #1f1e1f;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    /*visibility: hidden*/
+}
+
+.Containor {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.buttomColorCon {
+    width: 100%;
+    height: 100%;
+    background-color: #f2fafb;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    margin-top: 2420px
+}
+
+.buttom_Con {
+    width: 100%;
+}
+
+.Page_Contentent {
+    width: 60%;
+    height: auto;
+}
+
+.logo img {
+    margin-top: 20px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.background {
+    background-image: url("https://i.ibb.co/dgVtWGp/9.png");
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    left: 25%;
+    top: 0;
+}
+
+.backgroundMe {
+    background-image: url("https://i.ibb.co/dgVtWGp/9.png");
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    opacity: .5;
+    left: 27%;
+    top: 0;
+}
+
+.slider {
+    position: absolute;
+    right: 22%;
+    top: .5%;
+}
+
+.slider-button {
+    background-color: black;
+    width: 30px;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.Text {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 20%;
+}
+
+.main_text {
+    font-size: 170px;
+}
+
+.sub_text {
+    font-size: 50px;
+}
+
+.main_Content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    position: absolute;
+    width: 2170px;
+    height: 2170px;
+    flex-wrap: wrap;
+}
+
+.sqaure {
+    height: 1085px;
+    width: 1085px;
+}
+
+.sqaure_Bluish {
+    background-color: #baecee;
+}
+
+.sqaure_Pinkish {
+    background-color: #fae1ef;
+}
+
+.sqaure_whitesh {
+    background-color: #fefbe5;
+}
+
+.sqaure_pink {
+    background-color: #e8bdf5;
+}
+
+.Loading_Text_area {
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    width: auto;
+    left: 42%;
+    margin-top: 85%;
+}
+
+.Loading_Text {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    letter-spacing: 70px;
+    font-weight: 100;
+}
+
+.Loading_Image img {
+    position: absolute;
+    margin-top: 150px;
+    max-height: 1000px;
+    max-width: 1000px;
+    left: 250px;
+}
+
+.Number {
+    position: absolute;
+    width: auto;
+    left: 43%;
+    margin-top: 100%;
+    font-size: 70px;
+    font-family: 'Montserrat';
+}
+
+.credits {
+    position: absolute;
+    width: auto;
+    left: 39%;
+    color: rgb(112, 108, 108);
+    margin-top: 103%;
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+.Footer {
+    position: absolute;
+    margin-top: 107%;
+    display: flex;
+    flex-direction: row;
+    left: 35%;
+}
+
+.Footer_Text {
+    font-size: 35px;
+    margin-left: 100px;
+    letter-spacing: 10px;
+    font-family: 'Montserrat';
+}
+
+.buttom {
+    width: 2px;
+    left: 49.5%;
+    margin-top: 110%;
+    height: 150px;
+    position: absolute;
+    background-color: black;
+}
+
+.thunder_icon img {
+    position: absolute;
+    max-width: 300px;
+    max-height: 200px;
+    left: 65%;
+    top: 30%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.wave_icon img {
+    position: absolute;
+    max-width: 300px;
+    max-height: 200px;
+    left: 76%;
+    top: 50%;
+    width: 7rem;
+    height: 7rem;
+    z-index: 1;
+}
+
+.Arrow_icon img {
+    position: absolute;
+    max-width: 300px;
+    max-height: 200px;
+    left: 10%;
+    top: 100%;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
+}
+
+.step_icon img {
+    position: absolute;
+    max-width: 300px;
+    max-height: 200px;
+    left: 2900px;
+    margin-top: 2200px;
+    width: 7rem;
+    height: 7rem;
+    z-index: 1;
+}
+
+.sqr {
+    border-style: solid;
+    border-width: 0.5px;
+    width: 200px;
+    height: 70px;
+    margin-left: 800px;
+    margin-top: 900px;
+}
+
+.line {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin-top: 37px;
+    left: 700px;
+}
+
+.sqaure_whitesh span {
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    margin-left: 72px;
+    font-weight: 50;
+}
+
+.av {
+    position: absolute;
+    left: 47%;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 200px;
+}
+
+.av img {
+    border-radius: 50%;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+}
+
+.download {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
